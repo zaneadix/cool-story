@@ -1,0 +1,31 @@
+{
+  "name": "cool-story",
+  "version": "1.0.0",
+  "description": "A way to create and tell cool stories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaneadix/cool-story.git"
+  },
+  "keywords": [
+    "cool",
+    "story",
+    "create",
+    "fun",
+    "oh",
+    "boy"
+  ],
+  "author": "Zane Adickes <zaneadix@gmail.com> (https://github.com/zaneadix)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaneadix/cool-story/issues"
+  },
+  "homepage": "https://github.com/zaneadix/cool-story#readme",
+  "dependencies": {
+    "rollup": "0.41.6",
+    "unique-random-array": "1.0.0"
+  }
+}
