@@ -9,7 +9,7 @@ function random (count) {
     if (count) {
 
         var list = [];
-        for (var i = 1; i < count; i++) {
+        for (var i = 0; i < count; i++) {
             list.push(getRandomPokemonName());
         }
         return list;
