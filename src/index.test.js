@@ -23,5 +23,13 @@ describe('pokemon names', function () {
         it('should contain random name from pokemon.all', function () {
             expect(pokemon.all).to.include(pokemon.random());
         });
+
+        it('should return an array of random names if passed a number', function () {
+            var randomList = pokemon.random(3);
+            expect(randomList).to.have.length(3);
+            randomList.forEach(function (item) {
+                expect(pokemon.all).to.include(item);
+            });
+        });
     })
 });
