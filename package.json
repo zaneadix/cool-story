@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha src/index.test.js",
     "test:watch": "mocha src/index.test.js -w",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precommit": "npm run test",
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "chai": "4.0.0",
     "commitizen": "2.9.6",
+    "husky": "0.13.4",
     "mocha": "3.4.2",
     "rollup": "0.41.6",
     "semantic-release": "^6.3.6",
